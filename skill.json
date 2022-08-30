@@ -1,0 +1,82 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "de-DE": {
+          "summary": "Dein Skinhead Radio für Oi! Punk und Ska",
+          "examplePhrases": [
+            "Alexa starte Radio Endstation",
+            "Alexa spiele radio Endstation"
+          ],
+          "keywords": [
+            "radio",
+            "endstation",
+            "skinheaad",
+            "oi",
+            "ska",
+            "punk",
+            "punkrock"
+          ],
+          "name": "Radio Endstation",
+          "description": "Dein Skinhead Radio für Oi! Punk und Ska",
+          "smallIconUri": "file://assets/images/de-DE_smallIconUri.png",
+          "largeIconUri": "file://assets/images/de-DE_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [
+          {
+            "sourceLocale": "de-DE",
+            "language": "de"
+          }
+        ],
+        "isActive": true
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Alexa spiele Radio Endstation",
+      "category": "STREAMING_SERVICE",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:960261918234:function:bb92c2f2-40bc-4f17-880e-a60a44231214:Release_1"
+        },
+        "interfaces": [
+          {
+            "type": "AUDIO_PLAYER"
+          }
+        ],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:960261918234:function:bb92c2f2-40bc-4f17-880e-a60a44231214:Release_1"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:960261918234:function:bb92c2f2-40bc-4f17-880e-a60a44231214:Release_1"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:960261918234:function:bb92c2f2-40bc-4f17-880e-a60a44231214:Release_1"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "de-DE": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
